@@ -16,7 +16,7 @@ const HomePage = () => {
   const logoutHandler = async () => {
     try {
       const res = await axios.get(
-        "https://apexresume-backend.onrender.com/api/v1/logout",
+        "https://apexresume-project.onrender.com/api/v1/logout",
         { withCredentials: true }
       );
       if (res.status === 200) {
