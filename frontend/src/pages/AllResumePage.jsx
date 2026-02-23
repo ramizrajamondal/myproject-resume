@@ -9,7 +9,7 @@ const AllResumePage = () => {
   useEffect(() => {
     const getAllResumeResponse = async () => {
       try {
-        const url = "https://apexresume-backend.onrender.com/api/v1/getall-resume";
+        const url = "https://apexresume-project.onrender.com/api/v1/getall-resume";
         const response = await axios.get(url, {
           withCredentials: true,
         })
