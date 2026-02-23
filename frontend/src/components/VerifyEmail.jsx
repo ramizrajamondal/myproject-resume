@@ -20,7 +20,7 @@ const VerifyEmail = () => {
         return;
       }
       const enteredOtp = otp.join("");
-      const url = "https://apexresume-backend.onrender.com/api/v1/verify-email"
+      const url = "https://apexresume-project.onrender.com/api/v1/verify-email"
       const response = await axios.post(url, {otp: enteredOtp}, {
         headers: {
           "Content-Type": "application/json"
