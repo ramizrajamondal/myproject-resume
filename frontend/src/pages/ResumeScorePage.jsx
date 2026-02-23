@@ -39,7 +39,7 @@ const ResumeScorePage = () => {
     e.preventDefault();
     setGettingRes(true);
     try {
-      const url = "https://apexresume-backend.onrender.com/api/v1/analyze-resume"
+      const url = "https://apexresume-project.onrender.com/api/v1/analyze-resume"
       const payload = { resumeText: resumeText, jobDescription: jobDescription }
       const response = await axios.post(url, payload, {
         headers: {
