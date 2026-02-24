@@ -3,7 +3,7 @@ import dbName from "../config/dbName.js";
 const dbConnection = async () => {
     try {
         const response = 
-        await mongoose.connect(`${process.env.MONGODB_URI}/${dbName.database}`);
+        await mongoose.connect(process.env.MONGODB_URI);
         if(response){
             console.log("connected to database");
         }else{
