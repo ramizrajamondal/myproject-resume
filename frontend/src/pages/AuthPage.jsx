@@ -22,7 +22,7 @@ const AuthPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
        try {
-        const url = isSignUp ? "https://apexresume-project.onrender.com/api/v1/register" : "https://apexresume-project.onrender.com/api/v1/login"
+        const url = isSignUp ? "https://myproject-resume.onrender.com/api/v1/register" : "https://myproject-resume.onrender.com/api/v1/login"
         const payload = isSignUp ? formData : {email: formData.email, password: formData.password}
         const response = await axios.post(url, payload,{
             headers:{

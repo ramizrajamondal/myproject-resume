@@ -17,7 +17,7 @@ app.use(cookieParser());
 const _dirname = path.resolve();
 
 app.use(cors({
-    origin: "https://apexresume-project-1.onrender.com/",
+    origin: "https://myproject-resume.onrender.com/",
     credentials: true
 }))
 

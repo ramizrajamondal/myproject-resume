@@ -8,7 +8,7 @@ const JobPage = () => {
   useEffect(() => {
     const getTrandingJobs = async () => {
       try {
-        const url = 'https://apexresume-project.onrender.com/api/v1/get/tranding-jobs'
+        const url = 'https://myproject-resume.onrender.com/api/v1/get/tranding-jobs'
         const response = await axios.get(url, {
           withCredentials: true
         })
